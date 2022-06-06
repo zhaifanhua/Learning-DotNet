@@ -1,0 +1,13 @@
+﻿<div class="row" style="margin-top:20%">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <input type="text" value="请选择文件" size="20" name="upfile" id="upfile" style="border:1px dotted #ccc">
+        <input type="button" value="浏览" onclick="path.click()" style="border:1px solid #ccc;background:#fff">
+        <input type="file" id="path" style="display:none" multiple="multiple" onchange="upfile.value=this.value">
+        <br />
+        <span id="output">0%</span>
+        <button type="button" id="file" onclick="UploadStart()" style="border:1px solid #ccc;background:#fff">开始上传</button>
+    </div>
+    <div class="col-lg-4"></div>
+</div>
+<script src="~/lib/UploadJs.js" asp-append-version="true"></script>

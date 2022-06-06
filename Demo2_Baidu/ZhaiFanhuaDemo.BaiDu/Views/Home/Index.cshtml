@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<head>
+    <title>百度一下，你就知道</title>
+    <link href="~/Content/css/index.css" rel="stylesheet" />
+    <script src="~/Content/js/jquery-3.4.1.min.js"></script>
+    <script src="~/Content/js/index.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="~/Content/img/logo.png" alt="logo" />
+        </div>
+        <div class="search_type">
+            选择搜索类型:
+            <label><input type="radio" name="search_type" value="local" checked="checked">本地</label>
+            <label><input type="radio" name="search_type" value="baidu">百度</label>
+        </div>
+        <div class="search">
+            <input type="text" class="search_text" id="search_text" placeholder="请输入搜索的内容……" />
+            <input type="button" class="search_button" id="search_button" value="百度一下" />
+            <ul id="search_result"></ul>
+        </div>
+    </div>
+</body>
